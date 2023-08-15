@@ -58,7 +58,6 @@ func main() {
 	b.Handle(&btnHelp, func(c tele.Context) error {
 		return c.Edit("Here is some help: ...")
 	})
-
 	// On inline button pressed (callback)
 	b.Handle(&btnPrev, func(c tele.Context) error {
 		return c.Respond()
